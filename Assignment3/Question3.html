@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3_Q3</title>
+</head>
+<style>
+    #outer{
+        background-color:rgb(199, 201, 203);
+        margin: 20px;
+        padding: 20px;
+        left: 100px;
+    }
+    .heading {
+        text-align: center;
+        margin-top: 0px;
+        font-size: 20px;
+    }
+    .product {
+        margin: 50px;
+        padding: 10px;
+        background-color: white;
+        width: 200px;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    label {
+        
+        display: inline-block;
+        margin: 10px;
+        font-size: 20px;
+    }
+    #buy {
+
+        color: white;
+        background-color: green;
+        padding: 10px;
+        border: none;
+        margin: 10px;
+    }
+    #price {
+        color: orangered;
+        display: block;
+    }
+</style>
+<body>
+    <div id="outer">
+        <div class="heading"> <h1> Our Products </h1></div>
+
+        <div style="display: flex; text-align: center;">
+
+            <div style="margin-left: 280px;" class="product">
+
+                <img src="./laptop.PNG" alt="">
+                <hr>
+                <label><b>Product 1</b></label>
+                <p>High quality products that meets your need</p>
+                <label id="price">$805.08</label>
+                <input type="submit" value="Add to cart" id="buy">
+            </div>
+
+            <div class="product">
+                <img src="./bag.PNG" alt="">
+                <hr>
+                <label><b>Product 2</b></label>
+                <p>Excellent craftsmanship and durable design</p>
+                <label id="price">$11.50</label>
+                <input type="submit" value="Add to cart" id="buy">
+                
+            </div>
+
+            <div class="product">
+                <img src="./keyboard.PNG" alt="">
+                <hr>
+                <label><b>Product 3</b></label>
+                <p>Reliable and affordaqble choice for everyone</p>
+                <label id="price">$12.00</label>
+                <input type="submit" value="Add to cart" id="buy">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
