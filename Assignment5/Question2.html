@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5Q2</title>
+</head>
+<body>
+    <script>
+        let num1 = 0
+        do {
+
+            num1 = prompt("Enter number of times to print the message")
+            num1 = Number(num1)
+            if(isNaN(num1) || num1<0) {
+                alert("Please enter valid positive number")
+            }
+        } while(isNaN(num1) || num1<0);
+
+        let str = prompt("Enter the Message")
+        alert("Check the console for the repeated messages!")
+        for(let i=1; i<=num1; i++) {
+
+            console.log(i+". "+str)
+        }
+    </script>
+</body>
+</html>
